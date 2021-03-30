@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" /> 
+	<meta name="author" content="Bun Bun Bake Shop">
+	<meta name="keywords" content="Bun Bun Bake Shop PUI">
+</head>
+<style>
+  
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="topnav">
+        <a style = "text-decoration: none;"href="index.html"><b>HOME</b></a>
+        <a style = "text-decoration: none;float:right" href="#cart"><b>CART</b></a>
+        <a style = "text-decoration: none;float:right" href="#about"><b>ABOUT</b></a>
+        <a style = "text-decoration: none;float:right" href="product.html"><b>MENU</b></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class ="square4"></div>
+  <div class ="square5"></div>
+  <div class ="sideNav">
+    <img src="assets/original-small.png" alt="original cinnamon roll" class="original-small" style="width:75px">
+    <img src="assets/blackberry-small.png" alt="blackberry cinnamon roll" class="blackberry-small" style="width:75px">
+    <img src="assets/walnut-small.png" alt="walnut cinnamon roll" class="walnut-small" style="width:75px">
+    <img src="assets/gf-small.png" alt="original gluten-free cinnamon roll" class="gf-small" style="width:75px">
+    <img src="assets/ps-small.png" alt="pumpkin spice cinnamon roll" class="ps-small" style="width:75px">
+    <img src="assets/cp-small.png" alt="caramel pecan cinnamon roll" class ="cp-small" style="width:75px">
+    <h4 class="o-text">Original</h4>
+    <h4 class="b-text">Blackberry</h4>
+    <h4 class="w-text">Walnut</h4>
+    <h4 class="g-text">Gluten Free</h4>
+    <h4 class="p-text">Pumpkin Spice</h4>
+    <h4 class="c-text">Caramel Pecan</h4>
+  </div>
+
+  <div class="product-details">
+    <img src="assets/cinnamonroll-rect.png" class="original-large" alt="original cinnamon roll with vanilla glaze and mint leaves">
+    <img src="assets/rect-image.png" class="rect1" alt="original cinnamon roll small image">
+    <img src="assets/rect-image1.png" class="rect2" alt="original cinnamon roll small image">
+
+    <h1 class="Original-Heading">ORIGINAL</h1>
+    <h2 class="Original-Price">$4.00</h2>
+    <h4 class="Original-Text">Try our delicious original cinnamon roll. Hand-made every morning, our rolls are made with the finest ingredients and once you take a bite you will only want more! </h3>
+    
+    <div class ="line1"></div>
+    <h4 class ="Select">*Select your glaze</h4>
+
+    <img src="assets/vanilla.png" class="vanilla" alt="vanilla glaze" style="width:67px">
+    <img src="assets/chocolate.png" class="chocolate" alt="chocolate glaze" style="width:67px">
+    <img src="assets/sugar.png" class="sugar" alt="sugar glaze" style="width:67px">
+
+    <div class="circle"></div>
+    <div class="line1"></div>
+  </div>
+  
+  <div class="addToCart"></div>
+    <div class="square6"></div>
+    <button class="square7" ><b>Add to Cart</b></button>
+
+    <h6 class="num-roll">*Number of Rolls</h6>
+    <h6 class="num-box">*Number of Boxes</h6>
+  </div>
+
+  <form class="drop-down" action="/action_page.php">
+    <select name="rolls" id="rolls">
+      <option value="one">1</option>
+      <option value="three">3</option>
+      <option value="six">6</option>
+      <option value="twelve">12</option>
+    </select>
+    <br><br>
+  </form>
+
+  <form class="num-select" action="/action_page.php">
+    <input type="number" id="number-select" name="quantity" min="1" max="10">
+  </form>
+
+</body>
+</html>

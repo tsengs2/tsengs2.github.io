@@ -1,0 +1,983 @@
+/* sources: https://www.w3schools.com */
+.hero  {
+    background-image: url('https://images.unsplash.com/photo-1428895009712-de9e58a18409?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80');
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.90;
+}
+
+h1 {
+    color: #ffffff;
+    opacity: 1;
+}
+
+h2 {
+    position: absolute;
+    width: 209px;
+    height: 112px;
+    left: 30px;
+    top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 56px;
+
+    color: rgba(102, 68, 52, 0.8);
+
+}
+
+h6 {
+    position: absolute;
+    width: 209px;
+    height: 340px;
+    left: 30px;
+    top: 215px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+
+    color: rgba(102, 68, 52, 0.8);
+
+}
+
+.button {
+    background: #EFCE8A; 
+    border: none;
+    color: #664434;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 620px;
+    margin-top: 0px;
+    border-radius: 75%;
+  }
+
+/* button hover state */
+.button:hover {
+    background: #664434;
+    color: #EFCE8A;
+    }
+
+  .title {
+    height: 212px;
+    width: 751px;
+    margin-top: 234px;
+    margin-left: 360px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106px;
+    text-align: center;
+    color: #FFFFFF;
+    
+  }
+
+  /* Helps position the navbar container inside the background image */
+
+  
+  /* The navbar */
+  .topnav {
+    height: 50px;
+    width: 1440px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    position: absolute;
+    background: rgba(222, 200, 173, 0.5);
+
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    color: #664434;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+  }
+  
+  /* Navbar hover state */
+  .topnav a:hover {
+    background-color: #664434;
+    color:#EFCE8A;
+  }
+
+  .menu {
+    height: 37px;
+    width: 81px;
+    left: 899px;
+    top: 18px;
+    border-radius: nullpx;
+    
+  }
+
+  .square1{
+    height: 790px;
+    width: 270px;
+    left: 0px;
+    top: 60px;
+    border-radius: 0px;
+    position: absolute;
+    background: rgba(222, 200, 173, 0.5);
+    
+  }
+
+  .square2{
+    height: 790px;
+    width: 576px;
+    left: 277px;
+    top: 60px;
+    border-radius: 0px;
+    position: absolute;
+    background: rgba(222, 200, 173, 0.5);
+  }
+
+  .square3{
+    height: 790px;
+    width: 576px;
+    left: 861px;
+    top: 60px;
+    border-radius: 0px;
+    position: absolute;
+    background: rgba(222, 200, 173, 0.5);
+
+  }
+
+  .original {
+    position: absolute;
+    width: 170px;
+    height: 185px;
+    left: 315px;
+    top: 120px;
+    border-radius: 50%;
+  }
+
+  .blackberry {
+    position: absolute;
+    width: 170px;
+    height: 185px;
+    left: 315px;
+    top: 370px;
+    border-radius: 50%;
+  }
+
+  .walnut{
+    position: absolute;
+    width: 170px;
+    height: 185px;
+    left: 315px;
+    top: 620px;
+    border-radius: 50%;
+  }
+
+  .gluten-free {
+    position: absolute;
+    width: 170px;
+    height: 185px;
+    left: 883px;
+    top: 120px;
+    border-radius: 50%;
+  }
+
+  .pumpkin-spice {
+    position: absolute;
+    width: 170px;
+    height: 185px;
+    left: 883px;
+    top: 370px;
+    border-radius: 50%;
+  }
+
+  .caramel-pecan{
+    position: absolute;
+    width: 170px;
+    height: 185px;
+    left: 883px;
+    top: 620px;
+    border-radius: 50%;
+  }
+
+  .button1 {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 548px;
+    top: 244px;
+    
+    background: #664434;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+
+  }
+
+  .button1:hover {
+    color: #EFCE8A;
+  }
+
+  .button2:hover {
+    color: #EFCE8A;
+  }
+
+  .button3:hover {
+    color: #EFCE8A;
+  }
+
+  .button4:hover {
+    color: #EFCE8A;
+  }
+
+  .button5:hover {
+    color: #EFCE8A;
+  }
+
+  .button6:hover {
+    color: #EFCE8A;
+  }
+
+  .button2 {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 548px;
+    top: 488px;
+    
+    background: #664434;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+
+  }
+
+  .button3 {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 548px;
+    top: 740px;
+    
+    background: #664434;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+
+  }
+
+  .button4 {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 1145px;
+    top: 244px;
+    
+    background: #664434;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .button5 {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 1145px;
+    top: 488px;
+    
+    background: #664434;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+
+  }
+
+  .button6 {
+    position: absolute;
+    width: 240px;
+    height: 42px;
+    left: 1145px;
+    top: 740px;
+    
+    background: #664434;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .original-text {
+    position: absolute;
+    width: 101px;
+    height: 35px;
+    left: 548px;
+    top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;  
+    color: #664434;
+  }
+
+  .original-price {
+    position: absolute;
+    width: 101px;
+    height: 35px;
+    left: 698px;
+    top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;  
+    color: #664434;
+  }
+
+  .gluten-text {
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    left: 1145px;
+    top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: left;  
+    color: #664434;
+  }
+
+  .gluten-price {
+    position: absolute;
+    width: 101px;
+    height: 35px;
+    left: 1295px;
+    top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;  
+    color: #664434;
+  }
+
+  .ps-text {
+    position: absolute;
+    width: 170px;
+    height: 35px;
+    left: 1145px;
+    top: 374px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: left;  
+    color: #664434;
+  }
+
+  .ps-price {
+    position: absolute;
+    width: 101px;
+    height: 35px;
+    left: 1295px;
+    top: 374px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;  
+    color: #664434;
+  }
+
+
+  .blackberry-text {
+    position: absolute;
+    width: 170px;
+    height: 35px;
+    left: 548px;
+    top: 374px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: left;  
+    color: #664434;
+  }
+
+  .blackberry-price {
+    position: absolute;
+    width: 101px;
+    height: 35px;
+    left: 698px;
+    top: 374px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;  
+    color: #664434;
+  }
+
+  .walnut-text {
+    position: absolute;
+    width: 170px;
+    height: 35px;
+    left: 548px;
+    top: 626px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: left;  
+    color: #664434;
+  }
+
+  .walnut-price {
+    position: absolute;
+    width: 101px;
+    height: 35px;
+    left: 698px;
+    top: 626px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;  
+    color: #664434;
+  }
+
+  .cp-text {
+    position: absolute;
+    width: 170px;
+    height: 35px;
+    left: 1145px;
+    top: 626px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: left;  
+    color: #664434;
+  }
+
+  .cp-price {
+    position: absolute;
+    width: 101px;
+    height: 35px;
+    left: 1295px;
+    top: 626px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;  
+    color: #664434;
+  }
+
+  .square4{
+    position: absolute;
+    width: 229px;
+    height: 826px;
+    left: 2px;
+    top: 60px;
+
+    background: rgba(222, 200, 173, 0.5);
+  }
+
+  .square5{
+    position: absolute;
+    width: 1196px;
+    height: 826px;
+    left: 241px;
+    top: 60px;
+
+    background: rgba(222, 200, 173, 0.5);
+  }
+
+  .original-small{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 63px;
+    top: 100px;
+    border-radius: 50%;
+  }
+
+  .blackberry-small{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 63px;
+    top: 210px;
+    border-radius: 50%;
+  }
+
+  .walnut-small{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 63px;
+    top: 320px;    
+    border-radius: 50%;
+  }
+
+  .gf-small{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 63px;
+    top: 430px;  
+    border-radius: 50%;
+  }
+
+  .ps-small{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 63px;
+    top: 540px;  
+    border-radius: 50%;
+  }
+
+  .cp-small{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 63px;
+    top: 650px;  
+    border-radius: 50%;
+  }
+
+  .b-text {
+    position: absolute;
+    width: 76px;
+    height: 24px;
+    left: 68px;
+    top: 270px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #664434;
+  }
+
+  .w-text {
+    position: absolute;
+    width: 76px;
+    height: 24px;
+    left: 60px;
+    top: 380px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #664434;
+  }
+
+  .g-text {
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    left: 0px;
+    top: 490px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #664434;
+  }
+
+  .p-text {
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    left: 5px;
+    top: 600px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #664434;
+  }
+
+  .c-text {
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    left: 5px;
+    top: 710px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #664434;
+  }
+
+  .o-text {
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    left: 0px;
+    top: 160px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #664434;
+  }
+
+  .original-large{
+    position: absolute;
+    width: 455px;
+    height: 347px;
+    left: 320px;
+    top: 138px;
+
+    border-radius: 40px;
+  }
+
+  .rect1{
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    left: 320px;
+    top: 509px;
+
+    border-radius: 10px;
+  }
+
+  .rect2{
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    left: 462px;
+    top: 509px;
+    
+    border-radius: 10px;
+  }
+
+  .Original-Heading{
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 740px;
+    top: 130px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 75px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #664434;
+
+  }
+
+  .Original-Price{
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    left: 1258px;
+    top: 140px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #664434;
+  }
+
+  .Original-Text {
+    position: absolute;
+    width: 499px;
+    height: 120px;
+    left: 825px;
+    top: 229px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #664434;
+  }
+
+  .line1 {
+    position: absolute;
+    width: 550px;
+    height: 1px;
+    left: 818px;
+    top: 412px;
+
+    background: #664434;
+  }
+
+  .Select {
+    position: absolute;
+    width: 500px;
+    height: 37px;
+    left: 700px;
+    top: 400px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+
+    color: #664434;
+
+  }
+
+  .vanilla {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 820px;
+    top: 500px;
+    border-radius: 50%;
+  }
+
+  .chocolate {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 920px;
+    top: 501px;
+    border-radius: 50%;
+  }
+
+  .sugar {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 1020px;
+    top: 501px;
+    border-radius: 50%;
+  }
+
+  .circle {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 1126px;
+    top: 503px;
+
+    background: rgba(196, 158, 106, 0.8);
+    border-radius: 50%;
+  }
+
+  .line1 {
+    position: absolute;
+    width: 63px;
+    height: 6px;
+    left: 1130px;
+    top: 535px;
+
+    background: #664434;
+    transform: rotate(-54.11deg);
+  }
+
+  .square6{
+    position: absolute;
+    width: 550px;
+    height: 183px;
+    left: 812px;
+    top: 600px;
+
+    background: rgba(232, 182, 103, 0.8);
+    border-radius: 20px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  .square7 {
+    position: absolute;
+    width: 471px;
+    height: 52px;
+    left: 855px;
+    top: 702px;
+    
+    background: #664434;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+
+  }
+
+  .num-roll{
+    position: absolute;
+    width: 145px;
+    height: 17px;
+    left: 855px;
+    top: 575px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #664434;
+  }
+
+  .num-box {
+    position: absolute;
+    width: 137px;
+    height: 71px;
+    left: 1098px;
+    top: 575px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #664434;
+
+  }
+
+  .drop-down {
+    position: absolute;
+    width: 137px;
+    height: 90px;
+    left: 1000px;
+    top: 625px;
+  }
+
+  .num-select {
+    position: absolute;
+    width: 137px;
+    height: 90px;
+    left: 1220px;
+    top: 625px;
+  }
+
+.cart-original {
+  position: absolute;
+  width: 249px;
+  height: 35px;
+  left: 580px;
+  top: 75px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 62px;
+
+  color: #664434;
+}
+
+.original-cart {
+
+  position: absolute;
+  width: 235px;
+  height: 181px;
+  left: 320px;
+  top: 139px;
+
+  background: url(image.png);
+  border-radius: 40px;
+}
+
+.cart-o-price{
+  position: absolute;
+  width: 249px;
+  height: 35px;
+  left: 850px;
+  top: 75px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 62px;
+
+  color: #664434;
+}
+
+
+.cart-square2{
+  height: 790px;
+  width: 800px;
+  left: 277px;
+  top: 60px;
+  border-radius: 0px;
+  position: absolute;
+  background: rgba(222, 200, 173, 0.5);
+}
+
+.cart-square3{
+  width: 352px;
+  height: 790px;
+  left: 1085px;
+  top: 60px;
+  border-radius: 0px;
+  position: absolute;
+  background: rgba(222, 200, 173, 0.5);
+
+}
