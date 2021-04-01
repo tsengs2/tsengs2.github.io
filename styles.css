@@ -891,7 +891,10 @@ h6 {
     font-size: 25px;
 
   }
-
+  .addToCart:hover {
+    color: #EFCE8A;
+  }
+  
   .num-roll{
     position: absolute;
     width: 300px;
