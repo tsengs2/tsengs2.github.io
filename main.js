@@ -21,7 +21,7 @@ function updateGlazeImage() {
 function updateRollPrice () {
 	var getRollNumOptions = document.getElementById("numOfRolls"); //get the number of roll options 1,3,6,12
 	var rollNumSelected = getRollNumOptions.options[getRollNumOptions.selectedIndex].text; //get the roll selected by the user
-	numOfRolls = parseInt(rollNumSelected) //convert num rolls options to int 
+	var numOfRolls = parseInt(rollNumSelected) //convert num rolls options to int 
     // var getRollPrice = document.getElementById("originalRollPrice")    
     var getNumBoxes = document.getElementById("numOfBoxes") //get the number of boxes inputed by the user 
     var numOfBoxes = parseInt(getNumBoxes.value); //covert number of boxes to int 
