@@ -1,4 +1,4 @@
-var rollPrice = 4;
+var rollPrice = 4; // declare global variable for rollPrice
 
 function updateGlazeImage() {
 	var glazeOptions = document.getElementById("glaze-options"); // get all the glaze options
@@ -25,7 +25,7 @@ function updateRollPrice () {
     // var getRollPrice = document.getElementById("originalRollPrice")    
     var getNumBoxes = document.getElementById("numOfBoxes") //get the number of boxes inputed by the user 
     var numOfBoxes = parseInt(getNumBoxes.value); //covert number of boxes to int 
-	document.getElementById("originalRollPrice").textContent = rollPrice* numOfRolls*numOfBoxes //update the price by finding the product of the price, number of rolls, and number of boxes
+	document.getElementById("originalRollPrice").textContent = rollPrice* numOfRolls * numOfBoxes //update the price by finding the product of the price, number of rolls, and number of boxes
 }
 
 function updateCartNumber (){
