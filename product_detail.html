@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  
 <head>
+  <!-- javascript -->
+	<script src="main.js"></script>
+  <!-- css -->
   <link rel="stylesheet" href="styles.css">
+  <title>Bun Bun Bake Shop</title>
   <meta charset="utf-8" /> 
 	<meta name="author" content="Bun Bun Bake Shop">
 	<meta name="keywords" content="Bun Bun Bake Shop PUI">
 </head>
-<style>
-  
-
-</style>
-
 <body>
   <div class="container">
     <div class="topnav">
-        <a style = "text-decoration: none;"href="index.html"><b>HOME</b></a>
-        <a style = "text-decoration: none;float:right" href="#cart"><b>CART</b></a>
-        <a style = "text-decoration: none;float:right" href="#about"><b>ABOUT</b></a>
-        <a style = "text-decoration: none;float:right" href="product.html"><b>MENU</b></a>
-      </div>
+        <a style = "text-decoration: none;" href="index.html"><b>HOME</b></a>
+        <a style = "text-decoration: none;float:right;" href="cart.html"><b>CART (<b id="cartNum">0</b>)</b></a>
+        <a style = "text-decoration: none;float:right;" href="#about"><b>ABOUT</b></a>
+        <a style = "text-decoration: none;float:right;" href="product.html"><b>MENU</b></a>
     </div>
   </div>
 
@@ -42,45 +41,63 @@
   </div>
 
   <div class="product-details">
-    <img src="Assets/cinnamonroll-rect.png" class="original-large" alt="original cinnamon roll with vanilla glaze and mint leaves">
-    <img src="Assets/rect-image.png" class="rect1" alt="original cinnamon roll small image">
-    <img src="Assets/rect-image1.png" class="rect2" alt="original cinnamon roll small image">
+    <img src="Assets/no-glaze.png" class="original-large" id = "original-large" alt="original cinnamon roll with vanilla glaze and mint leaves">
+    <img src="Assets/originalSmall.png" class="originalSmall" alt="original cinnamon roll small image">
+    <img src="Assets/vanillaSmall.png" class="vanillaSmall" alt="original cinnamon roll with vanilla milk glaze small image">
+    <img src="Assets/chocoSmall.png" class="chocoSmall" alt="original cinnamon roll with double chocolate small image">
+    <img src="Assets/sugarSmall.png" class="sugarSmall" alt="original cinnamon roll with sugar milk small image">
+
+
 
     <h1 class="Original-Heading">ORIGINAL</h1>
-    <h2 class="Original-Price">$4.00</h2>
-    <h4 class="Original-Text">Try our delicious original cinnamon roll. Hand-made every morning, our rolls are made with the finest ingredients and once you take a bite you will only want more! </h3>
+    <h2 class="OriginalRollPrice">$<b id ="originalRollPrice">4</b>.00</h2>
+    <h4 class="Original-Text">Try our delicious original cinnamon roll. Hand-made every morning, our rolls are made with the finest ingredients and once you take a bite you will only want more! </h4>
     
     <div class ="line1"></div>
-    <h4 class ="Select">*Select your glaze</h4>
+    <h4 class ="Select">Glaze Options</h4>
 
     <img src="Assets/vanilla.png" class="vanilla" alt="vanilla glaze" style="width:67px">
+    <p class ="vanillaGlaze">Vanilla Milk</p>
     <img src="Assets/chocolate.png" class="chocolate" alt="chocolate glaze" style="width:67px">
+    <p class ="chocoGlaze">Double Chocolate</p>
     <img src="Assets/sugar.png" class="sugar" alt="sugar glaze" style="width:67px">
+    <p class ="sugarGlaze">Sugar Milk</p>
 
     <div class="circle"></div>
     <div class="line1"></div>
+    <p class ="none">None</p>
+
   </div>
   
-  <div class="addToCart"></div>
-    <div class="square6"></div>
-    <button class="square7" ><b>Add to Cart</b></button>
-
+    <div class="addToCart"></div>
+    <div class="goldSquare"></div>
+    <button class="addToCart" onclick = "updateCartNumber()"><b>Add to Cart</b></button>
+    <h6 class="glaze">*Select Your Glaze</h6>
     <h6 class="num-roll">*Number of Rolls</h6>
     <h6 class="num-box">*Number of Boxes</h6>
-  </div>
 
-  <form class="drop-down" action="/action_page.php">
-    <select name="rolls" id="rolls">
-      <option value="one">1</option>
-      <option value="three">3</option>
-      <option value="six">6</option>
-      <option value="twelve">12</option>
+  <form class="glaze-drop-down" action="/action_page.php">
+    <select name="glaze-options" id="glaze-options" onchange="updateGlazeImage()">
+      <option value="none" id="none">None</option>
+      <option value="vanilla" id="vanilla">Vanilla Milk</option>
+      <option value="chocolate" id="chocolate">Double Chocolate</option>
+      <option value="sugar" id="sugar">Sugar Milk</option>
     </select>
     <br><br>
   </form>
 
-  <form class="num-select" action="/action_page.php">
-    <input type="number" id="number-select" name="quantity" min="1" max="10">
+  <form class="numberOfRolls" action="/action_page.php">
+    <select name="numOfRolls" id="numOfRolls" onchange="updateRollPrice()">
+      <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="6">6</option>
+      <option value="12">12</option>
+    </select>
+    <br><br>
+  </form>
+
+  <form class="numOfBoxes" action="/action_page.php">
+    <input type="number" id="numOfBoxes" name="quantity" value ="1" min="1" max="10" onchange="updateRollPrice()">
   </form>
 
 </body>
