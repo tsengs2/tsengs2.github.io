@@ -69,6 +69,7 @@ function updateRollPrice() {
     document.getElementById("originalRollPrice").textContent = rollPrice * numOfRolls * numOfBoxes //update the price by finding the product of the price, number of rolls, and number of boxes
 }
 function updateTotalCost(){
+    
     // referenced YouTube tutorial https://www.youtube.com/watch?v=IY5UN82FZ2Q
     let products = JSON.parse(localStorage.getItem('productsInCart')) //parse through productsInCart
     let items = Object.entries(products) //get the arrays in the cart
@@ -97,7 +98,7 @@ function addOrderToCart() {
     var itemPrice = document.getElementById("originalRollPrice").textContent; //get the item's price
     var price = parseInt(itemPrice); //get int of the price 
     var name = document.getElementById("Original-Heading").innerText; //get the name of the product 
-    let cartCost = localStorage.getItem('totalCost') //set cartCost in storage 
+    // let cartCost = localStorage.getItem('totalCost') //set cartCost in storage 
     itemsArray(name, glazeSelection, totalRolls, price, cartNum); //pass values into items Array as parameters 
     displayCart()
     updateTotalCost()
@@ -119,15 +120,19 @@ function itemsArray(name, glaze, rolls, price, cartNum) {
                 [product.glaze]: product
             }
         }
-        console.log(rolls)
-        console.log(cartItems[product.glaze].rolls)
-        cartItems[product.glaze].rolls += rolls	//adjust the number of rolls
-        cartItems[product.glaze].price += price //adjust the price 
+        else {
+            console.log(rolls)
+            console.log(cartItems[product.glaze].rolls)
+            cartItems[product.glaze].rolls += rolls	//adjust the number of rolls
+            cartItems[product.glaze].price += price //adjust the price 
+        }
     } 
     else {
         cartItems = {
             [product.glaze]: product
-        }         	
+        }  
+        // cartItems[product.glaze].rolls = rolls	//adjust the number of rolls
+        // cartItems[product.glaze].price = price //adjust the price        	
     }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems)); //store the array
     updateTotalCost();
@@ -136,6 +141,7 @@ function displayCart() {
     // referenced YouTube tutorial https://www.youtube.com/watch?v=IY5UN82FZ2Q
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || []; //prase through the items in cart
     let items = document.getElementById("products"); //get each item
+
     if (cartItems && items) { //html framework for adding each item into the cart
         items.innerHTML = '';
         Object.values(cartItems).map(item => {
