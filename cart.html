@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8" /> 
@@ -20,7 +20,6 @@
             <a style = "text-decoration: none;float:right;" href="#about"><b>ABOUT</b></a>
             <a style = "text-decoration: none;float:right;" href="product.html"><b>MENU</b></a>
         </div>
-      </div>
 
       <div class ="square1"></div>
       <div class ="cart-square2"></div>
@@ -32,34 +31,29 @@
         <h2 class="order-summary"> Order Summary </h2>
       </div>
       <div>
-        <h2 class="order-summary"> Total Price </h2>
+        <h2 class="order-price"> Total Price: $<span id="totalCostOfItems">0</span>.00 </h2>
       </div>
-      <div class ="white-square"></div>
-      <div>
-        <button class="checkoutButton1" ><b>Checkout</b></button>
-      </div>
+
+      <button class="checkoutButton1" ><b>Checkout</b></button> 
 
       <div class = "cartProduct">
         <div class = "cartHeader">
         <h5 class= "cartProductHeading">PRODUCT</h5>
         <h5 class= "cartPrice">Glaze</h5>
-        <h5 class= "cartPrice">Rolls</h5>
-        <h5 class= "cartQuantity">Boxes</h5>
+        <h5 class= "cartPrice">Total # of Rolls</h5>
+        <h5 class= "cartQuantity"></h5>
         <h5 class= "cartTotal">Price</h5>
       </div>
 
-      <div class ="products12" id = "products">
-      </div>
+      <div class ="products12" id = "products"></div>
         
-      <div class="productDetails">
-
-      </div>
 
       <div class ="seperation"></div>
 
-      <!-- javascript -->
-	    <script src="main.js"></script>
-    
+    </div>
+
+    <!-- javascript -->
+    <script src="main.js"></script>
 </body>
 </html>
     
