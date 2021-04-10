@@ -8,6 +8,9 @@ if (document.readyState == 'loading') {
 
 
 function ready() {
+
+    // referenced YouTube tutorial https://www.youtube.com/watch?v=IY5UN82FZ2Q
+
     var removeCartItem = document.getElementsByClassName('delete-item')
     console.log(removeCartItem.length)
 
@@ -19,13 +22,13 @@ function ready() {
             // var glazeOptions = document.getElementById("glaze-options"); // get all the glaze options
             // var glazeSelection = glazeOptions.options[glazeOptions.selectedIndex].text; //get the selected galze 
 
-            // let numberInCart = item.getElementsByClassName("numCart")[0].textContent
-            subtractCost(item)
+            let numberInCart = item.getElementsByClassName("numCart")[0].textContent
+            subtractCost(item, parseInt(numberInCart), "yes")
         })
     }
 }
 
-function subtractCost(item){
+function subtractCost(item, numberInCart, option){
     //change number in cart
     let productNumbers = parseInt(localStorage.getItem ('cartNum'))
     let totalProduct = productNumbers - parseInt(numberInCart)
@@ -108,7 +111,11 @@ function addOrderToCart() {
 
 }
 
+
 function itemsArray(name, glaze, rolls, boxes, price, cartNum) {
+
+    // referenced YouTube tutorial https://www.youtube.com/watch?v=IY5UN82FZ2Q
+
     let cartItems = JSON.parse(localStorage.getItem('productsInCart'))
     console.log(glaze);
     product = {
@@ -141,20 +148,6 @@ function itemsArray(name, glaze, rolls, boxes, price, cartNum) {
 
     }
 
-    // if (cartNum == 1)
-    // {
-    // 	var cartItems = new Array(product); //create new array if it is the first item being added 
-    // }
-    // else if (cartNum > 1)
-    // {
-    // 	var cartItems = JSON.parse(localStorage.getItem('productsInCart'))   //get the current array
-    //     if ({
-
-    //     }
-    //     else {
-    //         cartItems.push(product); //add product to array 
-    //     }
-    // }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems)); //store the array
 }
 
@@ -184,15 +177,18 @@ function displayCart() {
 }
 
 function removeItem() {
+    
+    // referenced YouTube tutorial https://www.youtube.com/watch?v=IY5UN82FZ2Q
+
     console.log(glaze)
     let obj = JSON.parse(localStorage.getItem('productsInCart'))
     let items = Object.entries(obj)
-    for (var i = 0; i < items.length; i++) { //loop over the collection
-        if (items[i][0] == glaze) { //see if ids match
+    for (var i = 0; i < items.length; i++) { 
+        if (items[i][0] == glaze) { 
             console.log(items[i][0])
-            items.splice(i, 1); //remove item from array
+            items.splice(i, 1); 
             console.log(items)
-            break; //exit loop
+            break; 
         }
     }
     temp = Object.fromEntries(items)
