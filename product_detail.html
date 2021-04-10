@@ -3,7 +3,7 @@
   
 <head>
   <!-- javascript -->
-	<script src="main.js"></script>
+	<script src="main.js" async></script>
   <!-- css -->
   <link rel="stylesheet" href="styles.css">
   <title>Bun Bun Bake Shop</title>
@@ -48,9 +48,37 @@
     <img src="Assets/sugarSmall.png" class="sugarSmall" alt="original cinnamon roll with sugar milk small image">
 
 
+    <div class="product">
+      <h1 class="Original-Heading" id="Original-Heading">ORIGINAL</h1>
+      <h2 class="OriginalRollPrice">$<b id ="originalRollPrice">4</b>.00</h2>
+      <div class="addToCart"></div>
+      <div class="goldSquare"></div>
+      <button class="addToCart" onclick = "addOrderToCart()"><b>Add to Cart</b></button>
+      <h6 class="glaze">*Select Your Glaze</h6>
+      <h6 class="num-roll">*Number of Rolls</h6>
+      <h6 class="num-box">*Number of Boxes</h6>
+  
+    <form class="glaze-drop-down" action="/action_page.php">
+      <select name="glaze-options" id="glaze-options" onchange="updateGlazeImage()">
+        <option value="none" id="none">None</option>
+        <option value="vanilla" id="vanilla">Vanilla Milk</option>
+        <option value="chocolate" id="chocolate">Double Chocolate</option>
+        <option value="sugar" id="sugar">Sugar Milk</option>
+      </select>
+      <br><br>
+    </form>
+  
+    <form class="numberOfRolls" action="/action_page.php">
+      <select name="numOfRolls" id="numOfRolls" onchange="updateRollPrice()">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+      </select>
+      <br><br>
+    </form>
+    </div>
 
-    <h1 class="Original-Heading">ORIGINAL</h1>
-    <h2 class="OriginalRollPrice">$<b id ="originalRollPrice">4</b>.00</h2>
     <h4 class="Original-Text">Try our delicious original cinnamon roll. Hand-made every morning, our rolls are made with the finest ingredients and once you take a bite you will only want more! </h4>
     
     <div class ="line1"></div>
@@ -69,32 +97,7 @@
 
   </div>
   
-    <div class="addToCart"></div>
-    <div class="goldSquare"></div>
-    <button class="addToCart" onclick = "updateCartNumber()"><b>Add to Cart</b></button>
-    <h6 class="glaze">*Select Your Glaze</h6>
-    <h6 class="num-roll">*Number of Rolls</h6>
-    <h6 class="num-box">*Number of Boxes</h6>
-
-  <form class="glaze-drop-down" action="/action_page.php">
-    <select name="glaze-options" id="glaze-options" onchange="updateGlazeImage()">
-      <option value="none" id="none">None</option>
-      <option value="vanilla" id="vanilla">Vanilla Milk</option>
-      <option value="chocolate" id="chocolate">Double Chocolate</option>
-      <option value="sugar" id="sugar">Sugar Milk</option>
-    </select>
-    <br><br>
-  </form>
-
-  <form class="numberOfRolls" action="/action_page.php">
-    <select name="numOfRolls" id="numOfRolls" onchange="updateRollPrice()">
-      <option value="1">1</option>
-      <option value="3">3</option>
-      <option value="6">6</option>
-      <option value="12">12</option>
-    </select>
-    <br><br>
-  </form>
+ 
 
   <form class="numOfBoxes" action="/action_page.php">
     <input type="number" id="numOfBoxes" name="quantity" value ="1" min="1" max="10" onchange="updateRollPrice()">

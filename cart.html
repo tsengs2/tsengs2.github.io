@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8" /> 
@@ -10,11 +11,12 @@
 </head>
 <body>
 
+
     <div class="container">
         <div class="topnav">
             <!-- navigation bar and links to those pages-->
             <a style = "text-decoration: none;" href="index.html"><b>HOME</b></a>
-            <a style = "text-decoration: none;float:right;" href="#cart.html"><b>CART (0)</b></a>
+            <a style = "text-decoration: none;float:right;" href="cart.html"><b>CART (<b id="cartNum">0</b>)</b></a>
             <a style = "text-decoration: none;float:right;" href="#about"><b>ABOUT</b></a>
             <a style = "text-decoration: none;float:right;" href="product.html"><b>MENU</b></a>
         </div>
@@ -23,40 +25,40 @@
       <div class ="square1"></div>
       <div class ="cart-square2"></div>
       <div class ="cart-square3"></div>
+      <div class = "seperation1"></div>
       <h2> Your Cart </h2>
-      <div>
-        <h4 class = "cart-original">Original</h4>
-        <h4 class = "cart-o-price">$4.00</h4>
-        <img src="Assets/Original-Cart.png" alt="Original Cinnamon Roll In Your Cart" class ="original-cart">
-        <p class = "cart-description">Glaze: Vanilla Milk <br> Number of Rolls: 1 <br> Number of Boxes: 1</p>
-        <img src="Assets/delete.png" alt="Delete item in your cart" class ="delete-item">
-      </div>
-      <div>
-        <button class="checkoutButton" ><b>Checkout</b></button>
-      </div>
+      
       <div>
         <h2 class="order-summary"> Order Summary </h2>
+      </div>
+      <div>
+        <h2 class="order-summary"> Total Price </h2>
       </div>
       <div class ="white-square"></div>
       <div>
         <button class="checkoutButton1" ><b>Checkout</b></button>
       </div>
 
-      <div>
-        <p class = "CartProduct">1 Product</p>
-        <p class = "CartOriginal">1 Original</p>
-        <p class= "CartPrice">$4.00</p>
-        <p class = "CartGlaze">Vanilla Milk Glaze <br>1 Roll, 1 Box</p>
-        <p class = "CartSubtotal">Subtotal</p>
-        <p class= "CartPrice1">$4.00</p>
-        <p class= "CartDelivery">Delivery</p>
-        <p class= "CartFree">Free</p>
-        <p class= "CartTotal">Total</p>
-        <p class= "CartPrice2">$4.00</p>
+      <div class = "cartProduct">
+        <div class = "cartHeader">
+        <h5 class= "cartProductHeading">PRODUCT</h5>
+        <h5 class= "cartPrice">Glaze</h5>
+        <h5 class= "cartPrice">Rolls</h5>
+        <h5 class= "cartQuantity">Boxes</h5>
+        <h5 class= "cartTotal">Price</h5>
+      </div>
+
+      <div class ="products12" id = "products">
+      </div>
+        
+      <div class="productDetails">
+
       </div>
 
       <div class ="seperation"></div>
 
+      <!-- javascript -->
+	    <script src="main.js"></script>
     
 </body>
 </html>
