@@ -738,7 +738,7 @@
 
 	.card p {
 	font-size: 0.75em;
-	font-family: 'Open Sans';
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
 	margin-top: 0.5em;
 	line-height: 2em;
 	}
