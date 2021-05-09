@@ -738,7 +738,6 @@
 
 	.card p {
 	font-size: 0.75em;
-	font-family: 'Open Sans';
 	margin-top: 0.5em;
 	line-height: 2em;
 	}
@@ -751,7 +750,6 @@
 	/* Project cards referenced https://codepen.io/Booligoosh/pen/mKPpQp */
 	.card .tags .tag {
 	font-size: 0.75em;
-	font-family: "Open Sans";
 	background: rgba(255,255,255,0.5);
 	border-radius: 0.3rem;
 	padding: 0 0.5em;
@@ -775,7 +773,6 @@
 	padding: 1em;
 	line-height: 1em;
 	opacity: .8;
-	font-family: "Open Sans"
 	}
 
 	/* Project cards referenced https://codepen.io/Booligoosh/pen/mKPpQp */
@@ -876,7 +873,6 @@
 	/* Referenced https://fossheim.io/writing/posts/css-text-gradient/ for animation and gradient */
 	#agot-heading{
 		text-align: left;
-		font-family: "Open Sans";
 		font-weight: bold;
 		font-size: 3em;
 		margin-bottom: 0.25em;
@@ -905,7 +901,6 @@
 	/* Referenced https://fossheim.io/writing/posts/css-text-gradient/ for animation and gradient */
 	#radiate-heading{
 		text-align: left;
-		font-family: "Open Sans";
 		font-weight: bold;
 		font-size: 3em;
 		margin-bottom: 0.25em;
@@ -934,7 +929,6 @@
 	/* Referenced https://fossheim.io/writing/posts/css-text-gradient/ for animation and gradient */
 	#atlantis-heading{
 		text-align: left;
-		font-family: "Open Sans";
 		font-weight: bold;
 		font-size: 2em;
 		margin-bottom: 0.25em;
@@ -985,7 +979,6 @@
 
 	#content-text{
 		margin-top: 3em;
-		font-family: "Open Sans";
 	}
 
 	/* About Us Page Responsiveness
@@ -1063,3 +1056,4 @@
 		display: table;
 		clear: both;
 	}
+
