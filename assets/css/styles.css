@@ -678,7 +678,7 @@
 
 	/* Project cards referenced https://codepen.io/Booligoosh/pen/mKPpQp */
 	.card {
-	font-family: 'Heebo';
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
 	--bg-filter-opacity: 0.7;
 	background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
 	height: 20em;
