@@ -1,0 +1,214 @@
+    /* Photography section css file referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    body {
+        background: #000000;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    #photography-section{
+        perspective: 1100px;
+        margin-bottom: 5em;
+    }
+    
+    * {
+        transition: all 1s ease;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .photo-img {
+        display: none !important;
+        opacity: 0 !important;
+        position: Absolute !important;
+        left: -999%;
+        top: -999%;
+    }
+    
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box {
+        position: relative;
+        width: 65%;
+        margin: 5% auto;
+        padding-bottom: 25%;
+        transform: rotateY(29deg);
+        transform-style: preserve-3d;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box div.top {
+        position: absolute;
+        top: 0;
+        width: 30.3%;
+        height: 100%;
+        float: left;
+        background-size: auto 100%;
+        transform-style: preserve-3d;
+        outline: 1px solid transparent;
+        -webkit-backface-visibility: hidden !important;
+        /* prevent jagged edges in firefox */
+        -webkit-animation: changeIt 25s infinite;
+        /* Safari 4.0 - 8.0 */
+        animation: changeIt 25s infinite;
+    }
+
+     /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */    
+    .box div.top:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(26, 188, 156, 0.15);
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box .left {
+        left: 0;
+        background-position: 0% 0;
+    }
+
+     /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */    
+    .box .center {
+        left: 34.83%;
+        background-position: -100% 0;
+    }
+
+     /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */    
+    .box .right {
+        left: 69.66%;
+        background-position: -197% 0;
+    }
+
+     /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */    
+    .box div.top > .side {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 10%;
+        height: 100%;
+        background-size: auto 100%;
+        transform-origin: 100% 50%;
+        transform: rotateY(-90deg);
+        -webkit-backface-visibility: hidden !important;
+        -webkit-animation: changeIt 25s infinite;
+        /* Safari 4.0 - 8.0 */
+        animation: changeIt 25s infinite;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box div.top > .side:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(26, 188, 156, 0.15);
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box .left > .side {
+        background-position: 0% 0;
+    }
+
+     /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */    
+    .box .center > .side {
+        background-position: -798% 0px !important;
+    }
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */    
+    .box .right > .side {
+        background-position: -2000.4% 0 !important;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box div.top .reflection {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: 50% 100%;
+        transform: rotateX(-90deg);
+        background-size: auto 100%;
+        outline: 1px solid transparent;
+        -webkit-animation: changeIt 25s infinite;
+        /* Safari 4.0 - 8.0 */
+        animation: changeIt 25s infinite;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box .left > .reflection {
+        left: 0;
+        background-position: 0% 0;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box .center > .reflection {
+        left: 34.83%;
+        background-position: -100% 0;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box .right > .reflection {
+        left: 69.66%;
+        background-position: -197% 0;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    .box .overlay {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 99.7%;
+        transform-origin: 50% 100%;
+        transform: rotateX(-90deg);
+        background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.6) 123%);
+        outline: 15px solid black;
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    @-webkit-keyframes changeIt {
+        0% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60971b54be3be402e2fc67be_lights.jpg);
+        }
+        20% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60971d087a2e4a88b22db3c5_sunset-p-2600.jpeg);
+        }
+        40% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60971dc7bcc940847a4f0d06_lincoln-center.jpg);
+        }
+        60% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/6097245853ebfb6b4a98a9a1_pitt-sunset.jpg);
+        }
+        80% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/6097254e9f6041023f1bf1db_water-p-2600.jpeg);
+        }
+        100% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60972559be3be4a5f1fc8dcc_clock.jpg);
+        }
+    }
+
+    /* Photography gallery referenced https://codepen.io/chrissimmons/pen/bwOaRv */ 
+    /* Standard syntax */
+    @keyframes changeIt {
+        0% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60971b54be3be402e2fc67be_lights.jpg);
+        }
+        20% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60971d087a2e4a88b22db3c5_sunset-p-2600.jpeg);
+        }
+        40% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60971dc7bcc940847a4f0d06_lincoln-center.jpg);
+        }
+        60% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/6097245853ebfb6b4a98a9a1_pitt-sunset.jpg);
+        }
+        80% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/6097254e9f6041023f1bf1db_water-p-2600.jpeg);
+        }
+        100% {
+        background-image: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60972559be3be4a5f1fc8dcc_clock.jpg);
+        }
+    }

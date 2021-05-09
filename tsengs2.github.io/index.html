@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Stephanie Tseng Portfolio">
+	<meta name="keywords" content="Stephanie Tseng Portfolio">
+	<meta name="description" content="Stephanie Tseng Portfolio">
+
+	<title>Stephanie Tseng Portfolio</title>
+
+	<!-- External Links to CSS files -->
+	<link rel="stylesheet" media="all" type="text/css" href="assets/css/styles.css" />
+
+	<!-- External Links to JS files -->
+	<script src="assets/js/scripts.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="top_row">
+			<a href="index.html"><img src="assets/images/stephanie-logo.png" alt="Stephanie Tseng Portfolio Logo"></a>
+			<nav>
+				<a class="selected" href="index.html">Projects</a>
+				<a class="nonselected" href="about.html">About</a>
+				<a class="nonselected" href="photography.html">Photography</a>
+			</nav>
+		</div>
+
+		<div id="content">
+			<div id="intro-section">
+			<h1>Hi, I’m Stephanie 👋</h1>
+			<div id="bio">
+				<div id="intro">I'm a product designer passionate about designing delightful human-centered experiences.
+					<br><br>
+					Currently a Product Designer @ <a href="https://www.childrenshospital.org/" target="_blank"><span
+							id="bch">Boston
+							Children's Hospital</span></a> and <a href="https://412foodrescue.org/"
+						target="_blank"><span id="foodRescue">412 Food Rescue</span></a>.
+				</div>
+				<!--Scroll down to projects section on click-->
+				<div id="button-wrapper"><button onclick="Scroll()" id="button-hover" type="button">VIEW
+						PROJECTS</button></div>
+			</div>
+		</div>
+
+			<!--Project cards-->
+			<!--Referenced https://codepen.io/Booligoosh/pen/mKPpQp-->
+
+			<div id="projects">
+				<section class="cards-wrapper">
+					<div class="project-card">
+						<a class="card radiate-card" href="radiate.html"
+							style="--bg-img: url(https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60122f1e58f32c024fbaf426_RTC%20Mockup.png)">
+							<div>
+								<h3 id="radiate-heading">Radiate</h3>
+								<p>Designed a web experience to support and empower minority owned small businesses
+									across the country.</p>
+								<div class="date">Summer 2020</div>
+								<div class="tags">
+									<div class="tag">Web Design</div>
+									<div class="tag">UI/UX Design</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="project-card">
+						<a class="card agot-card" href=""
+							style="--bg-img: url('https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/601634b3fefb7b55f60c6bfe_AgotMockup-FINAL-p-2000.png')">
+							<div>
+								<h3 id="agot-heading">Agot.AI</h3>
+								<p>Designed digital solutions for computer vision startup to enhance customer and
+									employee experiences.</p>
+								<div class="date">Summer 2020</div>
+								<div class="tags">
+									<div class="tag">Product Design</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="project-card">
+						<a class="card atlantis-card" href=""
+							style="--bg-img: url('https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60119a1c1cdc5c3255dcd85b_AH-min.png')">
+							<div>
+								<h3 id="atlantis-heading">Atlantis Hub</h3>
+								<p>Designed a data driven display to create a less stressful travel experience for
+									travelers in the San Juan Islands.</p>
+								<div class="date">Fall 2019</div>
+								<div class="tags">
+									<div class="tag">Data Driven Display</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<!--Social media buttons-->
+			<!--Referenced https://codepen.io/harkediansa/pen/bBqpwP-->
+			<div id="social-media">
+				<a class="social" href="https://www.facebook.com/stephanie.tseng.2/" target="_blank">
+					<div class="front">
+						<i class="facebook"><img src="assets/images/fb-small.png" alt="Small Facebook Logo"></i>
+					</div>
+					<div class="back">
+						<i class="facebook"><img src="assets/images/fb-large.png" alt="Large Facebook Logo"></i>
+					</div>
+				</a>
+	
+				<a class="social social-github" href="https://github.com/tsengs2" target="_blank">
+					<div class="front">
+						<i class="github"><img src="assets/images/github-small.png" alt="Small GitHub Logo"></i>
+					</div>
+					<div class="back">
+						<i class="github"><img src="assets/images/github-large.png" alt="Large GitHub Logo"></i>
+					</div>
+				</a>
+	
+				<a class="social social-email" href="mailto:stseng2@andrew.cmu.edu" target="_blank">
+					<div class="front">
+						<i class="email"><img src="assets/images/email-small.png" alt="Small Email Logo"></i>
+					</div>
+					<div class="back">
+						<i class="email"><img src="assets/images/email-large.png" alt="Large Email Logo"></i>
+					</div>
+				</a>
+	
+				<a class="social social-linkedin" href="https://www.linkedin.com/in/tsengstephanie/" target="_blank">
+					<div class="front">
+						<i class="linkedin"><img src="assets/images/linkedin-small.png" alt="LinkedIn Small Logo"></i>
+					</div>
+					<div class="back">
+						<i class="linkedin"><img src="assets/images/linkedin-large.png" alt="LinkedIn Large Logo"></i>
+					</div>
+				</a>
+			</div>
+				Made with ❤️ by Stephanie @2021<br />
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>
