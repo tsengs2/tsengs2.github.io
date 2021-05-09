@@ -1021,10 +1021,11 @@
 		font-weight: bold;
 		font-size: 3em;
 		margin-bottom: 0.25em;
-		display: block;
 		cursor: pointer;
 		width: 605px;
 		margin-top: 1em;
+		display:flex;
+
 	
 		/* Create the gradient. */
 		background-image: linear-gradient(
@@ -1055,7 +1056,7 @@
 	#radiate-content h4 {
 		font-weight: bold;
 		font-size: 2em;
-		display: block;
+		display:flex;
 		cursor: pointer;
 		margin-top: 2em;
 	
@@ -1085,7 +1086,7 @@
 		font-weight: bold;
 		font-size: 1.5em;
 		margin-bottom: 0.25em;
-		display: block;
+		display:flex;
 		cursor: pointer;
 		margin-top: 1.5em;
 		
