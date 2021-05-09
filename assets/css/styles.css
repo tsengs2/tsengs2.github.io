@@ -1,4 +1,4 @@
-	/* Referenced http://www.w3schools.com/cssref/css3_pr_overflow-y.asp */
+/* Referenced http://www.w3schools.com/cssref/css3_pr_overflow-y.asp */
 	/* The overflow-y property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, when it overflows at the top and bottom edges. */
 	html { 
 		overflow-y: scroll; 
@@ -738,6 +738,7 @@
 
 	.card p {
 	font-size: 0.75em;
+	font-family: 'Open Sans';
 	margin-top: 0.5em;
 	line-height: 2em;
 	}
@@ -750,6 +751,7 @@
 	/* Project cards referenced https://codepen.io/Booligoosh/pen/mKPpQp */
 	.card .tags .tag {
 	font-size: 0.75em;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
 	background: rgba(255,255,255,0.5);
 	border-radius: 0.3rem;
 	padding: 0 0.5em;
@@ -773,7 +775,8 @@
 	padding: 1em;
 	line-height: 1em;
 	opacity: .8;
-	}
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
+}
 
 	/* Project cards referenced https://codepen.io/Booligoosh/pen/mKPpQp */
 	.card:before, .card:after {
@@ -873,6 +876,7 @@
 	/* Referenced https://fossheim.io/writing/posts/css-text-gradient/ for animation and gradient */
 	#agot-heading{
 		text-align: left;
+		font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
 		font-weight: bold;
 		font-size: 3em;
 		margin-bottom: 0.25em;
@@ -901,6 +905,7 @@
 	/* Referenced https://fossheim.io/writing/posts/css-text-gradient/ for animation and gradient */
 	#radiate-heading{
 		text-align: left;
+		font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
 		font-weight: bold;
 		font-size: 3em;
 		margin-bottom: 0.25em;
@@ -929,6 +934,7 @@
 	/* Referenced https://fossheim.io/writing/posts/css-text-gradient/ for animation and gradient */
 	#atlantis-heading{
 		text-align: left;
+		font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
 		font-weight: bold;
 		font-size: 2em;
 		margin-bottom: 0.25em;
@@ -979,6 +985,7 @@
 
 	#content-text{
 		margin-top: 3em;
+		font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
 	}
 
 	/* About Us Page Responsiveness
