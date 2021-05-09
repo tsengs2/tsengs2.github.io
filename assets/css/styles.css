@@ -20,7 +20,6 @@
 
 	#intro-section{
 		padding: 3em 5em .5em 5em; 
-
 	}
 
 	/* Styling for navigation bar */
@@ -129,6 +128,11 @@
   	/* Referenced https://codepen.io/sreisner/pen/yOOOjx for text underline */
 	#top_row nav a.nonselected:hover::before {
 		height: 5px;  
+	}
+
+	
+	#content p{
+		line-height: 0.5em;
 	}
 
 	#content h1 {
@@ -738,7 +742,6 @@
 
 	.card p {
 	font-size: 0.75em;
-	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
 	margin-top: 0.5em;
 	line-height: 2em;
 	}
