@@ -169,7 +169,6 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	/* Animate the text when loading the element. This animates it on page load and when hovering out. */
-	animation: gradient-animation 0.75s ease forwards;
 }
 
 
@@ -992,7 +991,6 @@ a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	/* Animate the text when loading the element. This animates it on page load and when hovering out. */
-	animation: gradient-animation 0.75s ease forwards;
 }
 
 #radiate-content p {
@@ -1064,7 +1062,6 @@ a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	/* Animate the text when loading the element. This animates it on page load and when hovering out. */
-	animation: gradient-animation 0.75s ease forwards;
 }
 
 #radiate-content p {
@@ -1200,7 +1197,6 @@ a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	/* Animate the text when loading the element. This animates it on page load and when hovering out. */
-	animation: gradient-animation 0.75s ease forwards;
 }
 
 
