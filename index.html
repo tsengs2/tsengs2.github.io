@@ -21,13 +21,22 @@
 
 <body>
 	<div id="container">
-		<div id="top_row">
-			<a href="index.html"><img src="assets/images/stephanie-logo.png" alt="Stephanie Tseng Portfolio Logo"></a>
-			<nav>
-				<a class="selected" href="index.html">Projects</a>
-				<a class="nonselected" href="about.html">About</a>
-				<a class="nonselected" href="photography.html">Photography</a>
-			</nav>
+		<!-- Navigation bar referenced https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown for responsiveness-->
+		<div class="topnav" id="myTopnav">
+			<div class="logo">
+				<a href="index.html"><img src="assets/images/steph-tseng-logo.png"
+						alt="Stephanie Tseng Portfolio Logo"></a>
+
+				<div class="nav-links">
+
+					<a class="selected" href="index.html">Projects</a>
+					<a class="nonselected" href="about.html">About</a>
+					<a class="nonselected" href="photography.html">Photography</a>
+
+					<a href="javascript:void(0);" class="icon" onclick="burgerIcon()">&#9776;</a>
+
+				</div>
+			</div>
 		</div>
 
 		<div id="content">

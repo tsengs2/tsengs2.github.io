@@ -22,15 +22,23 @@
 
 <body>
 	<div id="container">
-		<div id="top_row">
-			<a href="index.html"><img src="assets/images/stephanie-logo.png" alt="Stephanie Tseng Portfolio Logo"></a>
-			<nav>
-				<a class="nonselected" href="index.html">Projects</a>
-				<a class="nonselected" href="about.html">About</a>
-				<a class="selected" href="photography.html">Photography</a>
-			</nav>
-		</div>
+		<!-- Navigation bar referenced https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown for responsiveness-->
+		<div class="topnav" id="myTopnav">
+			<div class="logo">
+				<a href="index.html"><img src="assets/images/steph-tseng-logo.png"
+						alt="Stephanie Tseng Portfolio Logo"></a>
 
+				<div class="nav-links">
+
+					<a class="nonselected" href="index.html">Projects</a>
+					<a class="nonselected" href="about.html">About</a>
+					<a class="selected" href="photography.html">Photography</a>
+
+					<a href="javascript:void(0);" class="icon" onclick="burgerIcon()">&#9776;</a>
+
+				</div>
+			</div>
+		</div>
 
 		<div id="content">
 			<div id="photography-content">
@@ -40,6 +48,8 @@
 						<div id="photography-section">
 
 							<h2>Photography</h2>
+							<p id="photograph-text">Sit back and enjoy a brief slideshow of my award winning photography.
+							</p>
 
 							<div class="preloader"><img class="photo-img"
 									src="https://uploads-ssl.webflow.com/5e17ac4dfb569e834e8a6376/60971b54be3be402e2fc67be_lights.jpg"
@@ -123,6 +133,8 @@
 					</footer>
 		</div>
 	</div>
+	</div>
+	</div>
 </body>
 
-</html>s
+</html>
